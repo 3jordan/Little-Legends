@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Latch-Key Program</title>
-    <link rel="stylesheet" type="text/css" href="ll-website.css">
     <link rel="stylesheet" type="text/css" href="about-styles.css">
 </head>
-
-<script>
-    function toggleFaq(element) {
-        const answer = element.querySelector('p');
-        answer.classList.toggle('active');
-    }
-</script>
-
 <body>
     <!-- Navigation menu -->
-    <nav>
-        <ul>
-            <li><a href="little-legends-website.html">Home</a></li>
-            <li><a href="about-me-ll.html">About Us</a></li>
+    <nav class="navbar">
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
         </ul>
     </nav>
 
@@ -43,7 +41,7 @@
 
         <!-- Fees -->
         <h2>Fees</h2>
-        <p>There is a non-refundable $15.00 annual registration fee per child. State paid childcare is accepted.</p>
+        <p>There is a non-refundable $15.00 annual registration fee per child. State-paid childcare is accepted.</p>
         <p>Morning OR Afternoon Session: $25.00 per week for the first child and $20.00 for each additional child.</p>
         <p>Morning AND Afternoon Session: $45.00 per week for the first child and $35.00 for each additional child.</p>
         <p>Late Fee Charges after 5:30pm*</p>
@@ -51,7 +49,7 @@
             <li>$10.00 will be added to the account for 1-15 minutes past the end of the program</li>
             <li>$20.00 will be added to the account for 15-30 minutes past the end of the program</li>
         </ul>
-        <p>*State paid childcare will not cover late fees.</p>
+        <p>*State-paid childcare will not cover late fees.</p>
 
         <!-- Special Features Start Here -->
         <!-- Testimonials -->
@@ -62,59 +60,40 @@
                 <cite>- John Doe, Parent</cite>
             </blockquote>
         </div>
-        
-        <!-- Photo Gallery -->
+
+        <!-- Photo Gallery with Slider -->
         <div class="photo-gallery">
             <h2>Photo Gallery</h2>
-            <div class="gallery-item">
-                <img src="image1.jpg" alt="Image 1">
-                <p>Description for Image 1</p>
-            </div>
-            <div class="gallery-item">
-                <img src="image2.jpg" alt="Image 2">
-                <p>Description for Image 2</p>
+            <div class="slider">
+                <div class="slides-container">
+                    <div class="slide">
+                        <img src="images/kid.picture(1).jpg" alt="Image 1">
+                        <p>Description for Image 1</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/kid.picture(2).jpg" alt="Image 2">
+                        <p>Description for Image 2</p>
+                    </div>
+                    <div class="slide">
+                        <img src="images/kid.picture(3).jpg" alt="Image 3">
+                        <p>Description for Image 3</p>
+                    </div>
+                </div>
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
             </div>
         </div>
 
         <!-- FAQ Section -->
-        <div class="faq-section">
-            <h2>FAQs</h2>
-            <div class="faq-item" onclick="toggleFaq(this)">
-                <h3>What are your operating hours?</h3>
-                <p>Our operating hours are Monday through Friday from 6:30 AM to 8:30 AM for the Morning Session and from 3:30 PM to 5:30 PM for the Afternoon Session.</p>
-            </div>
-            <div class="faq-item" onclick="toggleFaq(this)">
-                <h3>What is the late fee policy?</h3>
-                <p>If a child is picked up 1-15 minutes past the end of the program, a $10.00 late fee will be added to the account. If it's 15-30 minutes past the end of the program, a $20.00 late fee will be added.</p>
-            </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What are your operating hours?</h3>
+            <p class="faq-answer">Our operating hours are Monday through Friday from 6:30 AM to 8:30 AM for the Morning Session and from 3:30 PM to 5:30 PM for the Afternoon Session.</p>
         </div>
-
-
-
-
-        <!-- Contact Form -->
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="contact.php" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Send Message</button>
-                </div>
-            </form>
+        <div class="faq-item">
+            <h3 class="faq-question">What is the late fee policy?</h3>
+            <p class="faq-answer">If a child is picked up 1-15 minutes past the end of the program, a $10.00 late fee will be added to the account. If it's 15-30 minutes past the end of the program, a $20.00 late fee will be added.</p>
         </div>
-
-        
     </div>
+    <script src="about-me.js"></script>
 </body>
 </html>

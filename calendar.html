@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="calendar.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about-me-ll.html">About Us</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 id="currentDate"></h1>
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </header>
+    <main>
+        <nav>
+            <button id="viewMonth"></button>
+            <button id="viewWeek"></button>
+        </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Calendar content will be generated here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="calendar.js"></script> <!-- Include your JavaScript file here -->
+</body>
+</html>

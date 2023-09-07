@@ -1,157 +1,205 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, p {
+/* Reset some default styles */
+html, body {
     margin: 0;
     padding: 0;
 }
 
-/* Basic styles for the body */
+/* Apply styles to the entire page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: white; /* Highlight (background) */
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease-in-out;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #F5EAFB;
+    color: #333;
+    font-size: 24px;
 }
 
-/* Navigation menu styles */
-nav {
-    background-color: white; /* Deep Blue (nav background) */
-    color: #fff;
-    padding: 10px 0;
+/* Common Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px; /* Increase the padding to make it taller */
+    text-align: center;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Center the content horizontally and evenly space the navigation links */
+.navbar ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px; /* Increased margin for better spacing */
+.navbar li {
+    margin: 0 20px; /* Adjust the spacing between navigation items */
 }
 
-nav a {
+/* Style the navigation links */
+.navbar a {
     text-decoration: none;
-    color: #003BAF;
+    color: white;
     font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-    font-size: x-large;
-    padding: 120px;
+    font-size: 24px;
 }
 
-nav a:hover {
-    color: #FF914B; /* Orange (hover color) */
+/* Hover effect for navigation links */
+.navbar a:hover {
+    color: #ffbcd9; /* Change the hover color as needed */
 }
 
-/* Container for the main content */
+
+/* Common styles for sections */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 30px;
-    background-color: #FFFFFF; /* White (container background) */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    text-align: left;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-/* Heading styles */
-h1 {
-    color: #DC4664; /* Red (heading color) */
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-    color: #82C828; /* Green (heading color) */
-    font-size: 28px;
     margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
-/* Paragraph styles */
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333; /* Dark Gray (text color) */
-    margin-bottom: 20px;
+.container h1 {
+    color: #ffbcd9;
 }
 
-/* Style for FAQ section */
+.container h2 {
+    color: #333;
+}
+
+/* Testimonials Styles */
+.testimonials {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.testimonials h2 {
+    color: #ffbcd9;
+}
+
+.testimonials blockquote {
+    color: #333;
+    font-style: italic;
+}
+
+.testimonials cite {
+    color: #333;
+}
+
+/* Photo Gallery Styles */
+.photo-gallery {
+    margin-top: 20px;
+}
+
+.photo-gallery h2 {
+    color: #ffbcd9;
+    font-size: 32px; /* Adjust the font size as needed */
+}
+
+.photo-gallery p {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.slider {
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.slides-container {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+}
+
+.slide img {
+    max-width: 80%; /* Adjust the maximum width as needed to make images smaller */
+    max-height: 80vh; /* Adjust the maximum height as needed to maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* FAQ Section Styles */
 .faq-section {
     margin-top: 20px;
 }
 
+.faq-section h2 {
+    color: #ffbcd9;
+}
+
 .faq-item {
     cursor: pointer;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
 .faq-item h3 {
-    font-weight: bold;
+    color: #333;
 }
 
-/* Initially hide FAQ answers */
-.faq-item p {
+.faq-answer {
     display: none;
 }
 
-/* Style for active (expanded) FAQ answers */
-.faq-item p.active {
+.faq-answer.show-answer {
     display: block;
-    margin-top: 10px;
 }
 
-/* Style for the contact form */
-.contact-form {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #f7f7f7;
+/* Style the FAQ button */
+.faq-button {
+    display: inline-block;
+    background-color: #ffbcd9;
+    color: #333;
+    padding: 10px 20px;
     border-radius: 5px;
-}
-
-.contact-form h2 {
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+    cursor: pointer;
     font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.faq-button:hover {
+    background-color: #f5eafb;
     color: #333;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+.show-faq {
+    display: block;
 }
 
-.form-group textarea {
-    resize: vertical;
+/* List styles */
+ul {
+    list-style-type: none;
+    margin-left: 20px;
 }
 
-.form-group button {
-    background-color: #007BFF;
-    color: #fff;
+/* FAQ button styles */
+#prevBtn,
+#nextBtn {
+    background-color: #ffbcd9;
+    color: #333;
     border: none;
     padding: 10px 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.form-group button:hover {
-    background-color: #0056b3;
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: #f5eafb;
+    color: #333;
+}
+
+/* FAQ item styles */
+.faq-item p {
+    display: none;
 }

@@ -1,0 +1,112 @@
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the entire page */
+body {
+    background-color: #e7feff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    font-size: 24px;
+    
+}
+
+/* Common Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px; /* Increase the padding to make it taller */
+    text-align: center;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Center the content horizontally and evenly space the navigation links */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px; /* Adjust the spacing between navigation items */
+}
+
+/* Style the navigation links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    color: #ffbcd9; /* Change the hover color as needed */
+}
+
+
+/* Style the contact form container */
+.contact-form {
+    background-color: #d3f0c0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-top: 20px;
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Style the submit button */
+.form-group button[type="submit"] {
+    background-color: #ffbcd9;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #f5eafb;
+    color: #333;
+}

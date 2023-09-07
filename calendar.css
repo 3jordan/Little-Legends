@@ -1,0 +1,152 @@
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cefdff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+/* Common Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px; /* Increase the padding to make it taller */
+    text-align: center;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Center the content horizontally and evenly space the navigation links */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px; /* Adjust the spacing between navigation items */
+}
+
+/* Style the navigation links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    color: #ffbcd9; /* Change the hover color as needed */
+}
+
+
+
+/* Style the header */
+header {
+    margin: 20px 0;
+}
+
+/* Style the navigation buttons */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffbcd9;
+}
+
+button:hover {
+    color: #f5eafb;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #e7feff;
+}
+
+td {
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #ffbcd9;
+    color: #333;
+}
+
+/* Style cells with events */
+td.event-day {
+    background-color: #ffbcd9;
+    color: #333;
+    position: relative;
+}
+
+/* Style the visual indicator dot */
+td.event-day .event-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Style the event pop-up */
+.event-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.event-popup h2 {
+    color: #333;
+}
+
+.event-popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.event-popup ul li {
+    margin-bottom: 10px;
+}
+
+.event-popup button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.event-popup button:hover {
+    background-color: #ffbcd9;
+    color: #333;
+}

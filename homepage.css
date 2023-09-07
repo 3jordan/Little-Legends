@@ -1,0 +1,138 @@
+/* Updated styles for your daycare website */
+
+/* Modern Body Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for kids */
+    background-color: #F5EAFB; /* A cheerful background color */
+}
+
+/* Common Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px; /* Increase the padding to make it taller */
+    text-align: center;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Center the content horizontally and evenly space the navigation links */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px; /* Adjust the spacing between navigation items */
+}
+
+/* Style the navigation links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    color: #ffbcd9; /* Change the hover color as needed */
+}
+
+
+
+/* Hero Section Styles */
+/* Hero Section Styles */
+.hero {
+    background-image: url("hero.png");
+    background-size: cover; /* Make the image cover the entire hero section */
+    color: #ffbcd9;
+    text-align: center;
+    padding: 200px 0;
+    transition: opacity 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Kids Section Styles */
+.staff-section {
+    background-color: #e7feff; /* White background for contrast */
+    padding: 100px 0; /* Adjust the padding for your content */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+/* Beliefs Section Styles */
+.beliefs-section {
+    background-color: #d3f0c0; /* Another cheerful color */
+    padding: 100px 0; /* Adjust the padding for your content */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* CSS for the fade-in and fade-out effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+    
+
+
+.image-left, .image-right{
+    width: 185px;
+    height: auto;
+}
+
+
+.image-left{
+    margin-right: 950px;
+    margin-bottom: -185px;
+}
+
+.image-right{
+    margin-left: 950px;
+    margin-top: -160px;
+}
+
+
+.headshot{
+    width: 275px;
+    height: auto;
+    padding: 10px 180px 10px;
+}
+
+.headshot-captions{
+    padding: 10px 180px 10px;
+}
+
+.headshot-caption-one{
+    padding: auto;
+}
+
+.headshot-caption-two{
+    padding: auto;
+}
+
+.headshot-caption-three{
+   padding: auto; 
+}
