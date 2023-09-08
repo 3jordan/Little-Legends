@@ -72,7 +72,7 @@ body {
 /* Kids Section Styles */
 .staff-section {
     background-color: #e7feff; /* White background for contrast */
-    padding: 100px 0; /* Adjust the padding for your content */
+    padding: 40px 0; /* Adjust the padding for your content */
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -83,12 +83,39 @@ body {
 /* Beliefs Section Styles */
 .beliefs-section {
     background-color: #d3f0c0; /* Another cheerful color */
-    padding: 100px 0; /* Adjust the padding for your content */
+    padding: 40px 0; /* Adjust the padding for your content */
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
+.belief {
+    margin: 20px;
+}
+
+.belief-icon {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.belief-description {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Added FontAwesome icons */
+.fa-heart::before {
+    content: "\f004"; /* Heart icon */
+}
+
+.fa-book::before {
+    content: "\f02d"; /* Book icon */
+}
+
+.fa-child::before {
+    content: "\f1ae"; /* Child icon */
+}
 
 /* CSS for the fade-in and fade-out effect */
 .fade-in {
@@ -96,6 +123,19 @@ body {
     transition: opacity 0.5s ease-in-out;
 }
     
+
+.staff-gallery {
+    display: flex;
+    justify-content: space-around; /* Improved spacing between staff members */
+    align-items: center;
+    flex-wrap: wrap; /* Allows for multiple rows of staff members */
+    margin-top: 20px;
+}
+
+.staff-member {
+    margin: 20px; /* Increased margin for spacing between staff members */
+    text-align: center;
+}
 
 
 .image-left, .image-right{
@@ -115,24 +155,17 @@ body {
 }
 
 
-.headshot{
-    width: 275px;
-    height: auto;
-    padding: 10px 180px 10px;
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Creates rounded headshot images */
+    object-fit: cover; /* Maintains aspect ratio while covering the container */
 }
 
-.headshot-captions{
-    padding: 10px 180px 10px;
-}
-
-.headshot-caption-one{
-    padding: auto;
-}
-
-.headshot-caption-two{
-    padding: auto;
-}
-
-.headshot-caption-three{
-   padding: auto; 
+.headshot-caption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
 }

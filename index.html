@@ -6,6 +6,8 @@
     <title>Little Legends Academy</title>
     <script src="homepage.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxz2tnVHK3SN8pouFCXBk+2k3eR9fJlHfUss/jbnx70S5qT2K1pu4W5F6pGY83jzKk4j34fPcaz1lPqXTJwCgCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
 </head>
 <body>
@@ -27,27 +29,38 @@
     <section class="staff-section fade-in">
         <h2>Meet Our Staff</h2>
         <div class="staff-gallery">
-            <img class="headshot" id="headshot-1" src="images/headshot-fill-ins.png">        
-            <p class="headshot-captions" id="heashot-caption-one">Staff Caption one.</p>
-            <img class="headshot" id="headshot-2" src="images/headshot-fill-ins.png">  
-            <p class="headshot-captions" id="heashot-caption-two"> Staff Caption two.</p>
-            <img class="headshot" id="headshot-3" src="images/headshot-fill-ins.png">
-            <p class="headshot-captions" id="heashot-caption-three"> Staff Caption Three.</p>
+            <div class="staff-member">
+                <img class="headshot" src="images/headshot-fill-ins.png" alt="Staff Member 1">
+                <p class="headshot-caption">Staff Caption One.</p>
+            </div>
+            <div class="staff-member">
+                <img class="headshot" src="images/headshot-fill-ins.png" alt="Staff Member 2">
+                <p class="headshot-caption">Staff Caption Two.</p>
+            </div>
+            <div class="staff-member">
+                <img class="headshot" src="images/headshot-fill-ins.png" alt="Staff Member 3">
+                <p class="headshot-caption">Staff Caption Three.</p>
+            </div>
         </div>
     </section>
 
     <section class="beliefs-section fade-in">
         <h2>Our Foundational Beliefs</h2>
-        <div class="belief-icon">
-            <i class="fas fa-heart"></i>
+        <div class="belief">
+            <i class="fas fa-heart belief-icon"></i>
+            <p class="belief-description">We believe in fostering a loving and caring environment for every child.</p>
         </div>
-        <div class="belief-icon">
-            <i class="fas fa-book"></i>
+        <div class="belief">
+            <i class="fas fa-book belief-icon"></i>
+            <p class="belief-description">We believe in providing quality education to inspire young minds.</p>
         </div>
-        <div class="belief-icon">
-            <i class="fas fa-child"></i>
+        <div class="belief">
+            <i class="fas fa-child belief-icon"></i>
+            <p class="belief-description">We believe in nurturing the individuality and creativity of each child.</p>
         </div>
     </section>
+    
+    
 
     <script src="function.js"></script>
 
