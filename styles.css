@@ -1,22 +1,16 @@
-/* Updated styles for your daycare website */
-
-/* Modern Body Styles */
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for kids */
-    background-color: #F5EAFB; /* A cheerful background color */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #F5EAFB; 
 }
 
-/* Common Navigation Bar Styles */
+
 .navbar {
     background-color: #333;
     color: white;
-    padding: 20px 40px; /* Increase the padding to make it taller */
     text-align: center;
-    width: 100%;
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-/* Center the content horizontally and evenly space the navigation links */
 .navbar ul {
     list-style-type: none;
     display: flex;
@@ -26,11 +20,21 @@ body {
     padding: 0;
 }
 
-.navbar li {
-    margin: 0 20px; /* Adjust the spacing between navigation items */
+.nav-toggle {
+    display: none; 
+    cursor: pointer;
 }
 
-/* Style the navigation links */
+.nav-toggle i {
+    font-size: 24px;
+    color: white;
+}
+
+
+.navbar li {
+    margin: 0 20px;
+}
+
 .navbar a {
     text-decoration: none;
     color: white;
@@ -38,28 +42,34 @@ body {
     font-size: 24px;
 }
 
-/* Hover effect for navigation links */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-toggle i {
+    font-size: 24px;
+    color: white;
+}
+
 .navbar a:hover {
-    color: #ffbcd9; /* Change the hover color as needed */
+    color: #ffbcd9;
 }
 
 
 
-/* Hero Section Styles */
-/* Hero Section Styles */
 .hero {
-    background-image: url("hero.png");
-    background-size: cover; /* Make the image cover the entire hero section */
+    background-size: cover; 
     color: #ffbcd9;
     text-align: center;
-    padding: 200px 0;
+    padding: 160px 0;
     transition: opacity 0.5s ease-in-out;
     background-repeat: no-repeat;
     max-width: 100%;
-    flex-wrap: wrap;
-    
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
-
 
 .hero h1 {
     font-size: 36px;
@@ -69,10 +79,10 @@ body {
     font-size: 20px;
 }
 
-/* Kids Section Styles */
+
 .staff-section {
-    background-color: #e7feff; /* White background for contrast */
-    padding: 40px 0; /* Adjust the padding for your content */
+    background-color: #e7feff; 
+    padding: 40px 0;
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -80,10 +90,10 @@ body {
 
 
 
-/* Beliefs Section Styles */
+
 .beliefs-section {
-    background-color: #d3f0c0; /* Another cheerful color */
-    padding: 40px 0; /* Adjust the padding for your content */
+    background-color: #d3f0c0; 
+    padding: 5px 0; 
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -104,7 +114,7 @@ body {
     color: #333;
 }
 
-/* Added FontAwesome icons */
+
 .fa-heart::before {
     content: "\f004"; /* Heart icon */
 }
@@ -117,24 +127,31 @@ body {
     content: "\f1ae"; /* Child icon */
 }
 
-/* CSS for the fade-in and fade-out effect */
+
 .fade-in {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in-active{
+    opacity: 1;
+    transform: translateY(0);
 }
     
 
 .staff-gallery {
     display: flex;
-    justify-content: space-around; /* Improved spacing between staff members */
-    align-items: center;
-    flex-wrap: wrap; /* Allows for multiple rows of staff members */
-    margin-top: 20px;
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    margin-top: 0px;
 }
 
 .staff-member {
-    margin: 20px; /* Increased margin for spacing between staff members */
+    margin: 20px; 
     text-align: center;
+    flex-basis: calc(33.33% - 40px);
 }
 
 
@@ -159,8 +176,8 @@ body {
 .headshot {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Creates rounded headshot images */
-    object-fit: cover; /* Maintains aspect ratio while covering the container */
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
 .headshot-caption {
@@ -168,4 +185,52 @@ body {
     font-weight: bold;
     font-size: 16px;
     color: #333;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.fa-heart::before,
+.fa-book::before,
+.fa-child::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+
+.fa-heart::before,
+.fa-book::before,
+.fa-child::before {
+    display: inline-block;
+    width: 1em; 
+    height: 1em;
+    font-size: inherit;
+    line-height: 1;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul.show {
+        display: flex; 
+    }
+
+    .nav-toggle {
+        display: block;
+    }
 }
